@@ -5,4 +5,7 @@ kubectl label nodes minikube app=clearml;
 helm install allegroai/clearml-server-chart --namespace=clearml --generate-name --values values.yaml
 
 
-clearml-task --project server1 --name lightbgmwithrequirements --script train_with_lightbgm.py --queue default --requirements requirements.txt
+#Admin
+minikube dashboard
+ssh -N -f -L localhost:<dashboard_port>:127.0.0.1:<dashboard_port> med-hanifa@192.168.180.238
+
