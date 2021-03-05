@@ -1,12 +1,12 @@
 agent:
-  numberOfClearmlAgents: 4
+  numberOfClearmlAgents: 2
   nvidiaGpusPerAgent: 0
   defaultBaseDocker: "ecoron/python36-sklearn"
   clearmlApiHost: "http://192.168.49.2:30008"
   clearmlWebHost: "http://192.168.49.2:30080"
   clearmlFilesHost: "http://192.168.49.2:30081"
-  clearmlGitUser: null
-  clearmlPassword: null
+  clearmlGitUser: 
+  clearmlPassword: 
   awsAccessKeyId: null
   awsSecretAccessKey: null
   awsDefaultRegion: null
